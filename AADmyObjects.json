@@ -1,0 +1,158 @@
+{ 
+	"DESCRIPTION": "cube, sphere, cone objects",
+	"type": "node",
+	"name": "rootNode",
+
+	"objects":
+	[
+		{
+			"DESCRIPTION": "camera looking at origin from above Z axis",
+			"type": "camera",
+			"name": "camera1",
+			"eye": [0, 0, 10],
+			"center": [0, 0, 0],
+			"vup": [0, 1, 0],
+			"fov": 45
+		},
+		{
+			"DESCRIPTION": "white directional light shining on right top",
+			"type": "directional light",
+			"name": "light1",
+			"color": [1, 1, 1],
+			"position": [1, 2, 3]
+		},
+		{
+			"DESCRIPTION": "white directional light shining on back left",
+			"type": "directional light",
+			"name": "light2",
+			"color": [0.6, 0.6, 0.6],
+			"position": [-1, -2, -3]
+		},
+		{
+			"DESCRIPTION": "red cube to left top of origin",
+			"type": "mesh",
+			"name": "myCube",
+			"translate": [-3, 3, 0],
+			"geometry": "cube",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "cubeMat",
+				"diffuseColor": [1, 0.2, 0.2],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "green sphere to top of origin",
+			"type": "mesh",
+			"name": "mySphere",
+			"translate": [0, 3, 0],
+			"geometry": "sphere",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "sphereMat",
+				"diffuseColor": [0.2, 1, 0.2],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "blue cone to right top of origin",
+			"type": "mesh",
+			"name": "myCone",
+			"translate": [3, 3, 0],
+			"geometry": "cone",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "coneMat",
+				"diffuseColor": [0.2, 0.2, 1],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "yellow plane to left of origin",
+			"type": "mesh",
+			"name": "myPlane",
+			"translate": [-3, 0, 0],
+			"geometry": "plane",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "planeMat",
+				"diffuseColor": [1, 1, 0.2],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "orange text at origin",
+			"type": "mesh",
+			"name": "myText",
+			"translate": [0, 0, 0],
+			"geometry": "text",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "textMat",
+				"diffuseColor": [1, 0.5, 0.2],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "purple torus to right of origin",
+			"type": "mesh",
+			"name": "myTorus",
+			"translate": [3, 0, 0],
+			"geometry": "torus",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "torusMat",
+				"diffuseColor": [0.5, 0.2, 1],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "cyan ring to left bottom of origin",
+			"type": "mesh",
+			"name": "myRing",
+			"translate": [-3, -3, 0],
+			"geometry": "ring",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "ringMat",
+				"diffuseColor": [0.2, 1, 1],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "white icosahedron to bottom of origin",
+			"type": "mesh",
+			"name": "myIcosahedron",
+			"translate": [0, -3, 0],
+			"geometry": "icosahedron",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "icosahedronMat",
+				"diffuseColor": [1, 1, 1],
+				"specularColor": [1, 1, 1]
+			}
+		},
+		{
+			"DESCRIPTION": "fuschia octahedron to right bottom of origin",
+			"type": "mesh",
+			"name": "myOctahedron",
+			"translate": [3, -3, 0],
+			"geometry": "octahedron",
+			"material": 
+			{
+				"type": "MeshPhongMaterial",
+				"name": "octahedronMat",
+				"diffuseColor": [1, 0.2, 1],
+				"specularColor": [1, 1, 1]
+			}
+		}
+	]
+}
